@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Implementacion de opciones</h1>
+    
+    <div class="padre">
+        <p>Elegir una opcion</p>
+        <form action="" name="mascotas">
+            <div class="hijo">
+                <input type="radio" name="opciones" id="gato" class="btnRadio" value="gato" onclick="opcionMascota()">
+                <label for="gato">Gato</label>
+            </div>
+            <div class="hijo">
+                <input type="radio" name="opciones" id="perro" class="btnRadio" value="perro" onclick="opcionMascota()">
+                <label for="perro">Perro</label>
+            </div>
+            
+        </form>
+        
+    </div>
+  
+    <div class="padre">
+        <p>Cual es el mayor?</p>
+        <form action="" name="numeros">
+            <input type="phone" name="" id="nro1" placeholder="Ingrese un nro:">
+            <input type="phone" name="" id="nro2" placeholder="Ingrese un nro:">
+            <button type="submit" onclick="cualEsMayor()">Submit</button>
+        </form>
+        
+    </div>
+
+    <div class="padre">
+        <p>Sumando numeros</p>
+        <form action="" name="SumaNumeros">
+            <input type="phone" name="" id="nro1a" placeholder="Ingrese un nro:">
+            <input type="phone" name="" id="nro2a" placeholder="Ingrese un nro:">
+            <button type="submit" onclick="sumando()">Submit</button>
+        </form>
+        
+    </div>
+    
+    
+    <script src="./funciones.js"></script>
+</body>
+</html>
