@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad clase 2</title>
+
+    <style>
+        body {
+            font-size: 17px;
+            background-color: antiquewhite;
+            width: 98%;
+            margin: auto;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <noscript>
+        <p>Bienvenido a Mi Sitio</p>
+        <p>
+            La página que estás viendo requiere para su funcionamiento el uso de
+            JavaScript. Si lo has deshabilitado intencionadamente, por favor vuelve a
+            activarlo.
+        </p>
+    </noscript>
+
+    <h1>Actividad 2 Array</h1>
+
+    <p>Informacion del contacto:</p>
+
+
+    <script>
+
+        var nombre = prompt('Ingrese su nombre: ');
+        var apellido = prompt('Ingrese su apellido: ');
+        var edad = prompt('Ingrese su edad: ');
+        var ciudadActual = prompt('Ingrese el nombre de la ciudad donde vive: ');
+
+        let informacionUsuario = [];
+
+        informacionUsuario.push(nombre, apellido, edad, ciudadActual);
+
+        document.write(` Nombre: ${informacionUsuario[0]}. Apellido: ${informacionUsuario[1]}. Edad: ${informacionUsuario[2]}. Cuidad donde vive: ${informacionUsuario[3]}.`);
+
+
+    </script>
+</body>
+
+</html>
