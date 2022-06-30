@@ -59,11 +59,18 @@
             cantEnlaces.innerText = `Numero de enlaces = ${enlaces.length}`;
             info.appendChild(cantEnlaces);
             
-            
+            // Agrega enlace
+            let info2 = document.querySelectorAll('p')[0];
+            console.log('a', info2);
+            let enlace1 = document.createElement("a");
+            enlace1 = document.createAttribute("href");
+            console.log('b', enlace1);
+            enlace1.innerHTML = `https://www.cilsa.org/contacto/`;
+            info2.appendChild(enlace1);    
             
         }
 
-        
+               
         // completa la funcion agrega()
         function agrega() {    
             //const prompt = require("prompt-sync")({ sigint: true });
@@ -71,6 +78,7 @@
             let newItem = document.createElement('li');
             newItem.innerText = `${nombre} ${apellido}`;
             nombreCompleto.appendChild(newItem);
+            
         }
 
         //con esta funcion mostramos el contenido faltante del ultimo parrafo
